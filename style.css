@@ -1,0 +1,167 @@
+
+/*
+selector {
+    property: value;
+}
+
+Selectors:
+    Tags: div , p , a, h1, main, span, ...
+    Class: .demo, .header, ....
+    ID: #container, #footer
+
+Property: color, background-color
+Value: red, green, blue
+
+*/
+
+@font-face {
+    font-family: pixel-font;
+    src:url("./PixelMplus12-Regular.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+.ztmy-main {
+    width: 100%;
+    margin: 0 -25px;
+}
+
+.ztmy-container {
+    padding: 0 25px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.background-img {
+    max-width: 100vw;
+    min-height: 100vh;
+    /* object-fit: contain; */
+    background-image: url("./ztmy-bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 auto;
+    background-attachment: fixed;
+}
+
+/* .background-img-top {
+    background-image: url("./ztmy2-editted.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    width: 767px;
+    height:100vh;
+    margin: 0 auto;
+    background-position: center center;
+    filter:opacity(0.5);
+    z-index: 1;
+} */
+
+
+
+.ztmy-header-logo {
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    /* margin-bottom: -150px; */
+    z-index: 2;
+    filter: sepia(5);
+    padding: 30px;
+    -webkit-transition: all 0.1s;
+
+    
+}
+
+.ztmy-header-logo:hover {
+    width: 50%;
+    -webkit-transition: all 0.5s;
+
+}
+
+.sidebar {
+    max-width: 260px;
+    height: auto;
+    position: absolute;
+    top: calc(80px + 5vw);
+    left: 70px;
+}
+
+
+.play-button-wrap {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 60px;
+    top: 50px;
+}
+
+.play-button-wrap img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+
+
+}
+
+.play-button-wrap img:hover {
+    vertical-align: middle;
+    width: 130%;
+    height: 130%;
+    transition: all 0.5s;
+}
+
+
+.play-button-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu .nav-bar a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 0.7;
+    font-weight: normal;
+    font-style: normal;
+    width: 0%;
+    color: white;
+    font-family: pixel-font;
+    text-decoration: none;
+    transition: width 0.3s;
+
+}
+
+.menu .nav-bar a:hover {
+    background-color: #7e28b0;
+    width: 100%;
+    transition: width 0.3s;
+    content: "";
+    padding-left: 10px;
+    left: 15px;
+    bottom: 15px;
+}
+
+
+.nav-bar li {
+    margin-bottom: 10px;
+}
+
+.nav-bar .sub-item {
+    padding-left: 1rem;
+}
